@@ -18,7 +18,7 @@ class ListQuestions(APIView):
             ]
         }
         question_two = {'id': 2,
-            'description': 'Order the following U.S. Presidents in chronological order.',
+            'description': 'The United States of America has had 45 presidents. Order the following U.S. Presidents in chronological order.',
             'options': [
                 {'id': 6,'answer_id': 6, 'text': 'Ronald Reagan', 'question_id': 2},
                 {'id': 7,'answer_id': 7, 'text': 'Richard Nixon', 'question_id': 2},
