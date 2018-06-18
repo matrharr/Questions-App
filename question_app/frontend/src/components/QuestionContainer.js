@@ -19,10 +19,16 @@ class QuestionContainer extends Component {
         } = this.props;
 
         return (
-            <div>
+            <div className="container">
                 <Question question={currentQuestion} />
-                <button disabled={prevDisabled} onClick={ prevQuestion }>Prev</button>
-                <button disabled={nextDisabled} onClick={ nextQuestion }>Next</button>
+                <div className="row">
+                    <div className="col">
+                        <button className="btn btn-outline-primary" style={{borderRadius: '40%'}} disabled={prevDisabled} onClick={ prevQuestion }>Previous</button>
+                    </div>
+                    <div className="col-md-auto">
+                        <button className="btn btn-primary" style={{borderRadius: '40%'}} disabled={nextDisabled} onClick={ nextQuestion }>Next</button>
+                    </div>
+                </div>
                 <hr />
             </div>
         )

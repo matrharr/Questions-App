@@ -28,8 +28,9 @@ export default class DroppableTarget extends Component {
         return (
             connectDropTarget &&
 			connectDropTarget(
-				<div>
-					{`Works with ${allowedDropEffect} drop effect`}
+				<div
+				className='btn btn-light'
+				style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', text: 'black'}}>
 					{isActive ? 'Release to drop' : 'Drag a box here'}
 				</div>,
             )

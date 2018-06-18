@@ -64,6 +64,7 @@ class DraggableOption extends Component {
             connectDragSource &&
             connectDragSource(
                 <div
+                className="btn btn-light border border-dark"
                 onClick={ () => selectOption(option) }
                 style={style}
                 >

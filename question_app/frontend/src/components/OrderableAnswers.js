@@ -37,28 +37,49 @@ class OrderableAnswers extends Component {
         })
 
         return (
-            <div>
-                {question.options.map((option) => (
-                    emptyOptions[option.id] ?
-                    <div>empty</div>
-                    :<DraggableOption
-                        option={option}
-                    />
-                ))}
-
-                <button disabled={!selectedOption} onClick={arrowRight}>→</button>
-                <button disabled={!selectedOption} onClick={arrowLeft}>←</button>
-                {Object.keys(targets[question.id]).map((key) => (
-                    targets[question.id][key] ?
-                    <DraggableOption
-                        option={targets[question.id][key]}
-                    />
-                    :<DroppableTarget
-                        onDrop={option => this.handleDrop(key, option)}
-                    />
-                ))}
-                <button disabled={!selectedOption || disableUpAndDown} onClick={arrowUp}>↑</button>
-                <button disabled={!selectedOption || disableUpAndDown} onClick={arrowDown}>↓</button>
+            <div className="row">
+                <div className="col-5">
+                    {question.options.map((option) => (
+                        emptyOptions[option.id] ?
+                        <div>
+                            <div>empty</div>
+                            <div className="w-100"></div>
+                        </div>
+                        :<div>
+                            <DraggableOption
+                                option={option}
+                            />
+                            <div className="w-100"></div>
+                        </div>
+                    ))}
+                </div>
+                <div className="col-1">
+                    <button disabled={!selectedOption} onClick={arrowRight}>→</button>
+                    <div className="w-100"></div>
+                    <button disabled={!selectedOption} onClick={arrowLeft}>←</button>
+                </div>
+                <div className="col-5">
+                    {Object.keys(targets[question.id]).map((key) => (
+                        targets[question.id][key] ?
+                        <div>
+                            <DraggableOption
+                                option={targets[question.id][key]}
+                            />
+                            <div className="w-100"></div>
+                        </div>
+                        :<div>
+                            <DroppableTarget
+                                onDrop={option => this.handleDrop(key, option)}
+                            />
+                            <div className="w-100"></div>
+                        </div>
+                    ))}
+                </div>
+                <div className="col-1">
+                    <button disabled={!selectedOption || disableUpAndDown} onClick={arrowUp}>↑</button>
+                    <div className="w-100"></div>
+                    <button disabled={!selectedOption || disableUpAndDown} onClick={arrowDown}>↓</button>
+                </div>
             </div>
         )
     }
