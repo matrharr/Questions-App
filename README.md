@@ -1,5 +1,5 @@
 # Questions-App
-A app for taking exams or surveys made with React/Redux/Django
+An app for taking exams or surveys made with React/Redux/Django
 
 The following GIFs demonstrate each of the 8 requirements listed in the project instructions beinging satisfied 
 
