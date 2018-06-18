@@ -44,17 +44,19 @@ class OrderableAnswers extends Component {
                         <div>
                             <div
                             className='btn btn-light'
-                            style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', width: '75%' }}
+                            style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', width: '75%', height: '50%'}}
                             >
                                 <span>--------------</span>
                             </div>
                             <div className="w-100"></div>
+                            <div className="col-xs-12" style={{height:"35px"}}></div>
                         </div>
                         :<div>
                             <DraggableOption
                                 option={option}
                             />
                             <div className="w-100"></div>
+                            <div className="col-xs-12" style={{height:"35px"}}></div>
                         </div>
                     ))}
                 </div>
@@ -71,6 +73,7 @@ class OrderableAnswers extends Component {
                                 option={targets[question.id][key]}
                             />
                             <div className="w-100"></div>
+                            <div className="col-xs-12" style={{height:"35px"}}></div>
                         </div>
                         :<div>
                             <DroppableTarget
@@ -78,6 +81,7 @@ class OrderableAnswers extends Component {
                                 count={key}
                             />
                             <div className="w-100"></div>
+                            <div className="col-xs-12" style={{height:"35px"}}></div>
                         </div>
                     ))}
                 </div>

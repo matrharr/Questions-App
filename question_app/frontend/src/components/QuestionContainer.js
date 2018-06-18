@@ -21,6 +21,7 @@ class QuestionContainer extends Component {
         return (
             <div className="container">
                 <Question question={currentQuestion} />
+                <div className="col-xs-12" style={{height:"50px"}}></div>
                 <div className="row">
                     <div className="col">
                         <button className="btn btn-lg btn-outline-primary" style={{borderRadius: '50%'}} disabled={prevDisabled} onClick={ prevQuestion }>Previous</button>
