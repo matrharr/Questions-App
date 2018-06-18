@@ -43,9 +43,10 @@ class OrderableAnswers extends Component {
                         emptyOptions[option.id] ?
                         <div>
                             <div
+                            className='btn btn-light'
                             style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', width: '75%' }}
                             >
-                                empty
+                                <span>--------------</span>
                             </div>
                             <div className="w-100"></div>
                         </div>
@@ -74,6 +75,7 @@ class OrderableAnswers extends Component {
                         :<div>
                             <DroppableTarget
                                 onDrop={option => this.handleDrop(key, option)}
+                                count={key}
                             />
                             <div className="w-100"></div>
                         </div>

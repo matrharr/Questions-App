@@ -21,7 +21,8 @@ export default class DroppableTarget extends Component {
 			canDrop,
 			isOver,
 			allowedDropEffect,
-			connectDropTarget
+			connectDropTarget,
+			count,
 		} = this.props
 		const isActive = canDrop && isOver
 
@@ -30,8 +31,8 @@ export default class DroppableTarget extends Component {
 			connectDropTarget(
 				<div
 				className='btn btn-light'
-				style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', text: 'black', width: '75%'}}>
-					{isActive ? 'Release to drop' : 'Drag a box here'}
+				style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', text: 'black', width: '75%', backgroundColor: 'white'}}>
+					<div className="float-left text-secondary"><strong>{count}</strong></div>
 				</div>,
             )
         )
