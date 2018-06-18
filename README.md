@@ -1,7 +1,7 @@
 # Questions-App
 A app for taking exams or surveys made with React/Redux/Django
 
-The following GIFs demonstrates each of the 8 requirements listed in the project instructions beinging satisfied 
+The following GIFs demonstrate each of the 8 requirements listed in the project instructions beinging satisfied 
 
 Requirement 1 - 4 (Drag and drop options from left to right column; Option is highlighted when selected; When an option is dropped on the right column, that option is still selected until user clicks on another option): 
 
