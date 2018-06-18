@@ -36,8 +36,12 @@ export const arrowDown = () => ({
     type: 'ARROW_DOWN',
 })
 
-export const arrowUp = () =>({
+export const arrowUp = () => ({
     type: 'ARROW_UP',
+})
+
+export const reset = () => ({
+    type: 'RESET',
 })
 
 export const fetchQuestions = () => {

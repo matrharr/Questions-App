@@ -29,6 +29,11 @@ const rootReducer = (state = initialState, action) => {
     let lastIndex;
     let oldTargetValue;
     switch (action.type) {
+        case 'RESET':
+            Object.keys(state.targets).map((key) =>{
+                state.targets[key] = [null, null, null, null, null];
+            })
+            return { ...state, emptyOptions: {}, selectOption: null };
         case 'ARROW_DOWN':
             selectedOption = state.selectedOption;
             qId = selectedOption.question_id;
@@ -127,8 +132,8 @@ const rootReducer = (state = initialState, action) => {
                         ...state,
                         questions: questions,
                         currentQuestion: questions[0],
-                        prevDisabled: prevDisabled,
-                        nextDisabled: nextDisabled,
+                        prevDisabled: true,
+                        nextDisabled: false,
                         targets: targets,
                         emptyOptions: emptyOptions,
                     };

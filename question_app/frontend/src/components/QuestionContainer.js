@@ -16,11 +16,13 @@ class QuestionContainer extends Component {
             nextDisabled,
             prevQuestion,
             prevDisabled,
+            reset
         } = this.props;
 
         return (
             <div className="container">
                 <Question question={currentQuestion} />
+                <button style={{border:"none"}} className="text-primary" onClick={reset}>RESET</button>
                 <div className="col-xs-12" style={{height:"50px"}}></div>
                 <div className="row">
                     <div className="col">
@@ -48,6 +50,7 @@ const mapDispatchToProps = dispatch => {
     return {
         nextQuestion: question => dispatch(actions.nextQuestion()),
         prevQuestion: question => dispatch(actions.prevQuestion()),
+        reset: () => dispatch(actions.reset()),
     };
 };
 

@@ -60,10 +60,10 @@ class OrderableAnswers extends Component {
                         </div>
                     ))}
                 </div>
-                <div className="col-1">
-                    <button disabled={!selectedOption} onClick={arrowRight}>→</button>
+                <div className="col-1" style={{marginTop: '10%'}}>
+                    <button style={{border:"none"}} disabled={!selectedOption} onClick={arrowRight}><span className="glyphicon glyphicon-arrow-right"></span></button>
                     <div className="w-100"></div>
-                    <button disabled={!selectedOption} onClick={arrowLeft}>←</button>
+                    <button style={{border:"none"}} disabled={!selectedOption} onClick={arrowLeft}><span className="glyphicon glyphicon-arrow-left"></span></button>
                 </div>
                 <div className="col-5">
                     {Object.keys(targets[question.id]).map((key) => (
@@ -85,10 +85,10 @@ class OrderableAnswers extends Component {
                         </div>
                     ))}
                 </div>
-                <div className="col-1">
-                    <button disabled={!selectedOption || disableUpAndDown} onClick={arrowUp}>↑</button>
+                <div className="col-1" style={{marginTop: '10%'}}>
+                    <button style={{border:"none"}} disabled={!selectedOption || disableUpAndDown} onClick={arrowUp}><span className="glyphicon glyphicon-arrow-up"></span></button>
                     <div className="w-100"></div>
-                    <button disabled={!selectedOption || disableUpAndDown} onClick={arrowDown}>↓</button>
+                    <button style={{border:"none"}} disabled={!selectedOption || disableUpAndDown} onClick={arrowDown}><span className="glyphicon glyphicon-arrow-down"></span></button>
                 </div>
             </div>
         )
