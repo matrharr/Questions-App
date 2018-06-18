@@ -1,6 +1,31 @@
 # Questions-App
 An app for taking exams or surveys made with React/Redux/Django
 
+# Getting started locally
+Run the following commands to install the necessary dependencies and run this app on your local machine environment.
+
+`git clone https://github.com/matrharr/Questions-App.git`
+
+`cd Questions-App`
+
+`pip install virtualenv`
+
+`virtualenv newenv`
+
+`source newenv/bin/activate`
+
+`pip install -r requirements.txt`
+
+`npm install`
+
+`npm run dev`
+
+And finally,
+`./manage.py runserver`
+
+Visit `localhost:8000` to view the project! :)
+
+# Demo
 The following GIFs demonstrate each of the 8 requirements listed in the project instructions beinging satisfied 
 
 Requirement 1 - 4 (Drag and drop options from left to right column; Option is highlighted when selected; When an option is dropped on the right column, that option is still selected until user clicks on another option): 
