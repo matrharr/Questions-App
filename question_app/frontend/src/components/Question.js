@@ -12,6 +12,7 @@ export default class Question extends Component {
             <div>
                 <div className="jumbotron" style={{background:"transparent"}}>
                     <p>{question.description}</p>
+                    <p>Reorder the list to the correct order:</p>
                 </div>
                 <OrderableAnswers question={question}/>
             </div>

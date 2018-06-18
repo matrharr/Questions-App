@@ -41,16 +41,23 @@ class OrderableAnswers extends Component {
                 <div className="col-5">
                     {question.options.map((option) => (
                         emptyOptions[option.id] ?
-                        <div>
+                        <div className="pl-5">
                             <div
                             className='btn btn-light'
-                            style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', width: '75%', 'padding': '5%'}}
+                            style={{
+                                        borderStyle: 'dashed',
+                                        color: 'white',
+                                        borderColor: 'black',
+                                        width: '75%',
+                                        padding: '3%',
+                                    }}
                             >
+                                <span>-</span>
                             </div>
                             <div className="w-100"></div>
                             <div className="col-xs-12" style={{height:"35px"}}></div>
                         </div>
-                        :<div>
+                        :<div className="pl-5">
                             <DraggableOption
                                 option={option}
                             />

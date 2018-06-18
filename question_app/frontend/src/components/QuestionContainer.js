@@ -21,8 +21,10 @@ class QuestionContainer extends Component {
 
         return (
             <div className="container">
-                <Question question={currentQuestion} />
-                <button style={{border:"none"}} className="text-primary" onClick={reset}>RESET</button>
+                <div className="border bg-white">
+                    <Question question={currentQuestion} />
+                    <button style={{border:"none"}} className="text-primary" onClick={reset}>RESET</button>
+                </div>
                 <div className="col-xs-12" style={{height:"50px"}}></div>
                 <div className="row">
                     <div className="col">
