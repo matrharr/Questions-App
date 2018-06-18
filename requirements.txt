@@ -215,7 +215,6 @@ ply==3.10
 probableparsing==0.0.1
 probablepeople==0.5.4
 prompt-toolkit==1.0.14
-prospyr==0.7.2
 protobuf==3.5.2.post1
 psutil==5.2.2
 psycopg2==2.7.3.1
