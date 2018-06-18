@@ -193,7 +193,6 @@ oauthlib==2.0.2
 objectpath==0.5
 olefile==0.44
 openpyxl==2.3.5
-openpyxl25==0.0.0
 packaging==16.8
 pact-python==0.16.0
 pandas==0.22.0
