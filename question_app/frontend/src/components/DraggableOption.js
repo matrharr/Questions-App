@@ -59,12 +59,12 @@ class DraggableOption extends Component {
         if (selectedOption) {
             isSelected = selectedOption.id === option.id;
         }
-        const style = isSelected ? { background: 'blue', color: 'white' } : null;
+        const style = isSelected ? { background: 'blue', color: 'white', width: '75%'} : {width: '75%'};
         return (
             connectDragSource &&
             connectDragSource(
                 <div
-                className="btn btn-light border border-dark"
+                className={"btn btn-light border border-dark " + (isSelected ? 'btn-lg': '')}
                 onClick={ () => selectOption(option) }
                 style={style}
                 >

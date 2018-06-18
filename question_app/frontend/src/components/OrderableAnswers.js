@@ -42,7 +42,11 @@ class OrderableAnswers extends Component {
                     {question.options.map((option) => (
                         emptyOptions[option.id] ?
                         <div>
-                            <div>empty</div>
+                            <div
+                            style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', width: '75%' }}
+                            >
+                                empty
+                            </div>
                             <div className="w-100"></div>
                         </div>
                         :<div>

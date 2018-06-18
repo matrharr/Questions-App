@@ -23,10 +23,10 @@ class QuestionContainer extends Component {
                 <Question question={currentQuestion} />
                 <div className="row">
                     <div className="col">
-                        <button className="btn btn-outline-primary" style={{borderRadius: '40%'}} disabled={prevDisabled} onClick={ prevQuestion }>Previous</button>
+                        <button className="btn btn-lg btn-outline-primary" style={{borderRadius: '50%'}} disabled={prevDisabled} onClick={ prevQuestion }>Previous</button>
                     </div>
                     <div className="col-md-auto">
-                        <button className="btn btn-primary" style={{borderRadius: '40%'}} disabled={nextDisabled} onClick={ nextQuestion }>Next</button>
+                        <button className="btn btn-lg btn-primary" style={{borderRadius: '50%'}} disabled={nextDisabled} onClick={ nextQuestion }>Next</button>
                     </div>
                 </div>
                 <hr />

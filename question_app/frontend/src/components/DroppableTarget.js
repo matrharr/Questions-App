@@ -30,7 +30,7 @@ export default class DroppableTarget extends Component {
 			connectDropTarget(
 				<div
 				className='btn btn-light'
-				style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', text: 'black'}}>
+				style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', text: 'black', width: '75%'}}>
 					{isActive ? 'Release to drop' : 'Drag a box here'}
 				</div>,
             )
