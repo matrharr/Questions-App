@@ -16,7 +16,7 @@ class QuestionContainer extends Component {
             nextDisabled,
             prevQuestion,
             prevDisabled,
-            reset
+            reset,
         } = this.props;
 
         return (

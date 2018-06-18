@@ -44,9 +44,8 @@ class OrderableAnswers extends Component {
                         <div>
                             <div
                             className='btn btn-light'
-                            style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', width: '75%', height: '50%'}}
+                            style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', width: '75%', 'padding': '5%'}}
                             >
-                                <span>--------------</span>
                             </div>
                             <div className="w-100"></div>
                             <div className="col-xs-12" style={{height:"35px"}}></div>

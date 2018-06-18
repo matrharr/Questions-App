@@ -33,7 +33,8 @@ const rootReducer = (state = initialState, action) => {
             Object.keys(state.targets).map((key) =>{
                 state.targets[key] = [null, null, null, null, null];
             })
-            return { ...state, emptyOptions: {}, selectOption: null };
+
+            return { ...state, emptyOptions: {}, selectedOption: null };
         case 'ARROW_DOWN':
             selectedOption = state.selectedOption;
             qId = selectedOption.question_id;
@@ -74,6 +75,9 @@ const rootReducer = (state = initialState, action) => {
         case 'ARROW_LEFT':
             selectedOption = state.selectedOption;
             qId = selectedOption.question_id;
+            if (!state.emptyOptions[selectedOption.id]) {
+                return { ...state };
+            }
             state.targets[qId].map((target, index) => {
                 if (target && target.id === selectedOption.id) {
                     newTargetId = index;

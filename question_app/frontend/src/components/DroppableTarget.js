@@ -25,14 +25,14 @@ export default class DroppableTarget extends Component {
 			count,
 		} = this.props
 		const isActive = canDrop && isOver
-
+		const counter = Number(count) + 1;
         return (
             connectDropTarget &&
 			connectDropTarget(
 				<div
 				className='btn btn-light'
-				style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', text: 'black', width: '75%', backgroundColor: 'white'}}>
-					<div className="float-left text-secondary"><strong>{count}</strong></div>
+				style={{borderStyle: 'dashed', color: 'white', borderColor: 'black', text: 'black', width: '75%', backgroundColor: 'white', 'padding': '3%'}}>
+					<div className="float-left text-secondary"><strong>{counter}</strong></div>
 				</div>,
             )
         )
