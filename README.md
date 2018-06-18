@@ -26,7 +26,7 @@ And finally,
 Visit `localhost:8000` to view the project! :)
 
 # Demo
-The following GIFs demonstrate each of the 8 requirements listed in the project instructions beinging satisfied 
+The following GIFs demonstrate each of the 8 requirements listed in the project instructions being satisfied.
 
 Requirement 1 - 4 (Drag and drop options from left to right column; Option is highlighted when selected; When an option is dropped on the right column, that option is still selected until user clicks on another option): 
 
