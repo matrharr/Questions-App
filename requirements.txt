@@ -90,7 +90,7 @@ dnspython==1.15.0
 docutils==0.14
 DoubleMetaphone==0.1
 drf-nested-routers==0.90.2
-ecdsa==0.13
+ecdsa==0.13.3
 email-validator==1.0.2
 entrypoints==0.2.3
 environ==1.0
