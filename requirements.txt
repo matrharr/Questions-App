@@ -58,7 +58,7 @@ ddtrace==0.11.0
 decorator==4.0.11
 deepdiff==3.3.0
 defusedxml==0.5.0
-Django==1.11.12
+Django==1.11.28
 django-debug-panel==0.8.3
 django-debug-toolbar==1.7
 django-environ==0.4.4
