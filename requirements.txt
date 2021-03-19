@@ -147,7 +147,7 @@ isodate==0.6.0
 jdcal==1.3
 jedi==0.10.2
 jenkinsapi==0.3.4
-Jinja2==2.9.6
+Jinja2==2.11.3
 jmespath==0.9.3
 jsmin==2.1.0
 jsonpath-rw==1.4.0
