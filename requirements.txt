@@ -264,7 +264,7 @@ python-magic==0.4.12
 python-mimeparse==1.6.0
 pytz==2017.2
 pyxero==0.9.0
-PyYAML==3.12
+PyYAML==5.4
 pyzmq==17.0.0
 qrcode==4.0.4
 Quandl==3.2.0
