@@ -160,7 +160,7 @@ kombu==3.0.35
 libsass==0.13.2
 linecache2==1.0.0
 lob==2.24
-lxml==4.1.1
+lxml==4.6.3
 mando==0.3.3
 Markdown==2.6.11
 marketorestpython==0.3.9
