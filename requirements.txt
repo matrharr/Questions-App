@@ -219,7 +219,7 @@ psutil==5.2.2
 psycopg2==2.7.3.1
 ptyprocess==0.5.2
 pusher==1.5
-py==1.4.34
+py==1.10.0
 py-pspdfkit==0.1.5
 pyasn1==0.2.3
 pyasn1-modules==0.0.9
