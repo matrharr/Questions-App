@@ -16,7 +16,7 @@ asn1crypto==0.22.0
 astor==0.6.2
 async-timeout==1.2.1
 attrs==17.2.0
-autobahn==0.16.0
+autobahn==20.12.3
 Automat==0.6.0
 Babel==2.0
 bandit==1.4.0
