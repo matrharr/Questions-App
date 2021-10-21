@@ -18,7 +18,7 @@ async-timeout==1.2.1
 attrs==17.2.0
 autobahn==0.16.0
 Automat==0.6.0
-Babel==2.0
+Babel==2.9.1
 bandit==1.4.0
 bdateutil==0.1
 beautifulsoup4==4.6.0
