@@ -196,7 +196,7 @@ packaging==16.8
 pact-python==0.16.0
 pandas==0.22.0
 pandocfilters==1.4.2
-paramiko==1.16.0
+paramiko==2.10.1
 pathspec==0.5.3
 pathtools==0.1.2
 pbr==2.0.0
